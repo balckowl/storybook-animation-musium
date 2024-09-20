@@ -1,0 +1,7 @@
+.text {
+    font-size: 70px;
+    font-weight: 900;
+    background: linear-gradient(to right, blue, red);
+    background-clip: text;
+    color: transparent;
+}

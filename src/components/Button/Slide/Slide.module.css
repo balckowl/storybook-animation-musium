@@ -1,0 +1,48 @@
+.btn {
+    position: relative;
+    padding: .5em 2em;
+    border: 1px solid black;
+    border-radius: 2.0rem;
+    cursor: pointer;
+    overflow: hidden;
+
+    &::before {
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        content: "";
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        border-radius: 2.0rem;
+        animation: to-right 0.3s forwards;
+    }
+
+    &:hover {
+        color: white;
+
+        &::before {
+            animation: from-left 0.3s forwards;
+        }
+    }
+}
+
+@keyframes from-left {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes to-right {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100%{
+        transform: translateX(100%);
+    }
+}

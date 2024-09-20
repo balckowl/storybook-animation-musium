@@ -1,0 +1,20 @@
+.btn {
+    padding: .5em 2em;
+    border: 1px solid black;
+    border-radius: 2.0rem;
+    cursor: pointer;
+
+    &:hover {
+        animation: pulse 1s;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 black;
+    }
+
+    100% {
+        box-shadow: 0 0 0 0.8em transparent;
+    }
+}
