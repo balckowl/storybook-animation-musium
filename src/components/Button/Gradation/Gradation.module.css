@@ -1,0 +1,25 @@
+/* Button.module.css */
+.btn {
+    padding: 0.5em 2.0em;
+    border: 1px black solid;
+    border-radius: 2.0rem;
+    background: linear-gradient(to right, black, white);
+    background-size: 500% 100%;
+    animation: animate 6.0s ease-in-out infinite;
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position: 0% 0%;
+      color: white;
+    }
+    50% {
+      background-position: 100% 0%;
+      color: black;
+    }
+    100% {
+      background-position: 0% 0%;
+      color: white;
+    }
+  }
+  
