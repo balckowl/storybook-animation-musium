@@ -1,0 +1,31 @@
+:root {
+    --clr-neon: #14f7ff;
+    --clr-bg: #001414;
+    --font-size: 3rem;
+}
+
+
+.btn {
+    position: relative;
+    font-family: "Balsamiq Sans";
+    color: var(--clr-neon);
+    border: var(--clr-neon) 3px solid;
+    padding: .5rem 2.0rem;
+    border-radius: 2.0rem;
+    text-shadow: 0 0 .2em #fff7, 0 0 .3em var(--clr-neon);
+    box-shadow: inset 0 0 .5em var(--clr-neon), 0 0 .5em var(--clr-neon);
+
+    &::before{
+        position: absolute;
+        content: "";
+        top: 140%;
+        left:0;
+        width: 100%;
+        height: 100%;
+        background: var(--clr-neon);
+        transform: perspective(0.2em) rotateX(10deg) scale(1.3,0.40);
+        filter: blur(0.5em);
+        opacity: 0.6;
+
+    }
+}
