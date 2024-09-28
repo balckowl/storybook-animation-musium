@@ -1,4 +1,5 @@
-import Default from "./components/Scroll/Default/Default";
+import Default from "./components/Slider/Default/Default";
+
 
 
 export default function App() {
